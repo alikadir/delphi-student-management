@@ -1,0 +1,31 @@
+program Project2;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1},
+  Unit2 in 'Unit2.pas' {ogrkay},
+  Unit3 in 'Unit3.pas' {drsekle},
+  Unit4 in 'Unit4.pas' {dersler},
+  Unit5 in 'Unit5.pas' {ogrler},
+  Unit6 in 'Unit6.pas' {silme},
+  Unit7 in 'Unit7.pas' {ogrvedrs},
+  Unit8 in 'Unit8.pas' {ograra},
+  Unit9 in 'Unit9.pas' {hkknd},
+  Unit10 in 'Unit10.pas' {Form10};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(Togrkay, ogrkay);
+  Application.CreateForm(Tdrsekle, drsekle);
+  Application.CreateForm(Tdersler, dersler);
+  Application.CreateForm(Togrler, ogrler);
+  Application.CreateForm(Tsilme, silme);
+  Application.CreateForm(Togrvedrs, ogrvedrs);
+  Application.CreateForm(Tograra, ograra);
+  Application.CreateForm(Thkknd, hkknd);
+  Application.CreateForm(TForm10, Form10);
+  Application.Run;
+end.
